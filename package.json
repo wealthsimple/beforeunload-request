@@ -1,0 +1,41 @@
+{
+	"name": "beforeunload-request",
+	"version": "1.0.0",
+	"description": "Use the best method available to send data to the server on beforeunload",
+	"module": "dist/how-long-till-lunch.esm.js",
+	"browser": "dist/beforeunload-request.min.js",
+	"unpkg": "dist/beforeunload-request.min.js",
+	"dependencies": {},
+	"devDependencies": {
+		"@babel/core": "^7.4.3",
+		"@babel/preset-env": "^7.4.3",
+		"babel-plugin-transform-object-assign": "^6.22.0",
+		"rollup": "^1.10.1",
+		"rollup-plugin-babel": "^4.3.2",
+		"rollup-plugin-license": "^0.8.1",
+		"rollup-plugin-node-resolve": "^4.2.3",
+		"rollup-plugin-uglify": "^6.0.2"
+	},
+	"browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",
+	"scripts": {
+		"build": "rollup --config"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/simpletaxca/beforeunload-request.git"
+	},
+	"keywords": [
+		"beforeunload",
+		"request",
+		"fetch",
+		"sendBeacon",
+		"synchronous",
+		"xhr"
+	],
+	"author": "SimpleTax Software Inc.",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/simpletaxca/beforeunload-request/issues"
+	},
+	"homepage": "https://github.com/simpletaxca/beforeunload-request#readme"
+}
