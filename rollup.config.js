@@ -20,7 +20,7 @@ export default [
 	{
 		input: 'src/index.js',
 		output: {
-			name: 'beforeunload-request',
+			name: 'beforeunloadRequest',
 			file: pkg.browser,
 			format: 'umd',
 			sourcemap: true
