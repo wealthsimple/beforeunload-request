@@ -1,7 +1,7 @@
 {
 	"name": "beforeunload-request",
 	"version": "1.0.0",
-	"description": "Use the best method available to send data to the server on beforeunload",
+	"description": "Provides a unified API to use the best method available to send data to the server on beforeunload",
 	"module": "dist/how-long-till-lunch.esm.js",
 	"browser": "dist/beforeunload-request.min.js",
 	"unpkg": "dist/beforeunload-request.min.js",
