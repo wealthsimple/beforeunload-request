@@ -77,6 +77,10 @@ window.addEventListener('beforeunload', event => {
 });
 ```
 
+## Browser compatability
+
+This library requires, at the minimum, support for `XMLHttpRequest`, including `setRequestHeaders` and `withCredentials`. [Those are supported in IE10 and above](https://developer.mozilla.org/en-US/docs/Web/API/XMLHttpRequest#Browser_compatibility).
+
 ## Methodoloy
 
 We first try to use [`navigator.sendBeacon`](https://www.w3.org/TR/beacon/) if it's available and the request is compatible. Compatible requests are `POST` requests with `'include'` as the credentials mode and no headers, with the exception of `Content-Type` if the data being sent is a string. `navigator.sendBeacon` can also fail if the data being sent is over the maximum size limit or due to a [browser issue with `Content-Type`](https://bugs.chromium.org/p/chromium/issues/detail?id=490015).
@@ -85,4 +89,4 @@ If `navigator.sendBeacon` is not available, if the request is not compatible, or
 
 If synchronous XHR fails, we try [`fetch`](https://fetch.spec.whatwg.org/) with the [`keepalive`](https://fetch.spec.whatwg.org/#request-keepalive-flag) flag set. We do this after synchronous XHR because `fetch` with `keepalive` can fail in certain situations due to a [browser issue with headers](https://bugs.chromium.org/p/chromium/issues/detail?id=835821). This failure cannot be intercepted in a synchronous manner, so there is no way to recover with a different method.
 
-This execution order ensures cross-browser compatability, despite the quirks and issues with the new APIs. That being said, to guarantee the best user experience, you should aim for your requests to be compatible with `navigator.sendBeacon`. This avoids users having to wait for the synchronous XHR to complete when attempting to navigate away.
+This execution order ensures cross-browser compatability with, despite the quirks and issues with the new APIs. That being said, to guarantee the best user experience, you should aim for your requests to be compatible with `navigator.sendBeacon`. This avoids users having to wait for the synchronous XHR to complete when attempting to navigate away.
