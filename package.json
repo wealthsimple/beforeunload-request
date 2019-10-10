@@ -22,7 +22,7 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "git+https://github.com/simpletaxca/beforeunload-request.git"
+		"url": "git+https://github.com/wealthsimple/beforeunload-request.git"
 	},
 	"keywords": [
 		"beforeunload",
@@ -35,7 +35,7 @@
 	"author": "SimpleTax Software Inc.",
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/simpletaxca/beforeunload-request/issues"
+		"url": "https://github.com/wealthsimple/beforeunload-request/issues"
 	},
-	"homepage": "https://github.com/simpletaxca/beforeunload-request#readme"
+	"homepage": "https://github.com/wealthsimple/beforeunload-request#readme"
 }
