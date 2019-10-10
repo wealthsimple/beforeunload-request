@@ -1,6 +1,6 @@
 {
 	"name": "beforeunload-request",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A unified API to reliably send data on beforeunload.",
 	"module": "dist/beforeunload-request.esm.js",
 	"browser": "dist/beforeunload-request.min.js",
