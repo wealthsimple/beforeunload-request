@@ -2,19 +2,19 @@
 	"name": "beforeunload-request",
 	"version": "1.0.0",
 	"description": "A unified API to reliably send data on beforeunload.",
-	"module": "dist/how-long-till-lunch.esm.js",
+	"module": "dist/beforeunload-request.esm.js",
 	"browser": "dist/beforeunload-request.min.js",
 	"unpkg": "dist/beforeunload-request.min.js",
 	"dependencies": {},
 	"devDependencies": {
-		"@babel/core": "^7.4.3",
-		"@babel/preset-env": "^7.4.3",
+		"@babel/core": "^7.6.4",
+		"@babel/preset-env": "^7.6.3",
 		"babel-plugin-transform-object-assign": "^6.22.0",
-		"rollup": "^1.10.1",
-		"rollup-plugin-babel": "^4.3.2",
+		"rollup": "^1.23.1",
+		"rollup-plugin-babel": "^4.3.3",
 		"rollup-plugin-license": "^0.12.1",
-		"rollup-plugin-node-resolve": "^4.2.3",
-		"rollup-plugin-uglify": "^6.0.2"
+		"rollup-plugin-node-resolve": "^4.2.4",
+		"rollup-plugin-uglify": "^6.0.3"
 	},
 	"browserslist": "> 0.5%, last 2 versions, Firefox ESR, not dead",
 	"scripts": {

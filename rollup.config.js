@@ -12,7 +12,9 @@ export default [
 			resolve(),
 			license({
 				banner: {
-					file: './LICENSE'
+					content: {
+						file: './LICENSE'
+					}
 				}
 			})
 		]
@@ -31,7 +33,10 @@ export default [
 			uglify(),
 			license({
 				banner: {
-					file: './LICENSE'
+					content: {
+
+						file: './LICENSE'
+					}
 				}
 			})
 		]
