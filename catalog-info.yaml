@@ -1,0 +1,11 @@
+---
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: beforeunload-request
+  description: A unified API to reliably send data on beforeunload
+  tags:
+    - javascript
+spec:
+  type: other
+  lifecycle: production
